@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GadgetHub - Online Gadget Store</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <div class="navbar">
+
+            <div class="logo">
+                Gadget<span>Hub</span>
+            </div>
+
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#products">Products</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <button class="cart-button" onclick="openCart()">
+                🛒 Cart (<span id="cart-count">0</span>)
+            </button>
+
+        </div>
+    </header>
+
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <div class="hero-text">
+
+                <p class="small-title">
+                    WELCOME TO GADGETHUB
+                </p>
+
+                <h1>
+                    Upgrade Your
+                    <span>Digital Life</span>
+                </h1>
+
+                <p>
+                    Discover the latest smartphones, headphones,
+                    smartwatches and accessories at amazing prices.
+                </p>
+
+                <a href="#products" class="shop-button">
+                    Shop Now →
+                </a>
+
+            </div>
+
+
+            <div class="hero-image">
+                📱
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PRODUCTS -->
+    <section id="products" class="products-section">
+
+        <div class="section-title">
+
+            <p>OUR PRODUCTS</p>
+
+            <h2>Popular Gadgets</h2>
+
+        </div>
+
+
+        <div class="filter-buttons">
+
+            <button onclick="filterProducts('all')">
+                All
+            </button>
+
+            <button onclick="filterProducts('phone')">
+                Phones
+            </button>
+
+            <button onclick="filterProducts('audio')">
+                Audio
+            </button>
+
+            <button onclick="filterProducts('watch')">
+                Smartwatch
+            </button>
+
+            <button onclick="filterProducts('accessory')">
+                Accessories
+            </button>
+
+        </div>
+
+
+        <div id="product-container" class="product-container">
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+    <section id="about" class="about">
+
+        <div class="section-title">
+
+            <p>WHY CHOOSE US</p>
+
+            <h2>Shopping Made Easy</h2>
+
+        </div>
+
+
+        <div class="features">
+
+            <div class="feature">
+                🚚
+                <h3>Fast Delivery</h3>
+                <p>
+                    Fast and reliable delivery across Bangladesh.
+                </p>
+            </div>
+
+
+            <div class="feature">
+                🔒
+                <h3>Secure Shopping</h3>
+                <p>
+                    Your shopping information stays safe.
+                </p>
+            </div>
+
+
+            <div class="feature">
+                💬
+                <h3>Customer Support</h3>
+                <p>
+                    Friendly support whenever you need us.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+
+        <div class="section-title">
+
+            <p>GET IN TOUCH</p>
+
+            <h2>Contact Us</h2>
+
+        </div>
+
+        <p>Email: support@gadgethub.com</p>
+
+        <p>Phone: +880 1XXXXXXXXX</p>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <h2>
+            Gadget<span>Hub</span>
+        </h2>
+
+        <p>
+            Your trusted online gadget store.
+        </p>
+
+        <p class="copyright">
+            © 2026 GadgetHub. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- CART MODAL -->
+    <div id="cart-modal" class="cart-modal">
+
+        <div class="cart-box">
+
+            <button class="close-button" onclick="closeCart()">
+                ×
+            </button>
+
+            <h2>Your Cart 🛒</h2>
+
+            <div id="cart-items">
+
+                <p>Your cart is empty.</p>
+
+            </div>
+
+            <div class="cart-total">
+
+                Total:
+                <strong id="cart-total">
+                    ৳0
+                </strong>
+
+            </div>
+
+            <button class="checkout-button" onclick="checkout()">
+                Checkout
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
